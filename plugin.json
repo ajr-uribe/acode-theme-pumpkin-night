@@ -1,5 +1,5 @@
 {
-  "id": "jobians.theme.amoled-black",
+  "id": "jobians.theme.amoled_black",
   "name": "AMOLED Black (Editor Theme)",
   "main": "dist/main.js",
   "version": "1.0.0",

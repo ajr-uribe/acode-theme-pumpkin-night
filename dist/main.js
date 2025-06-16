@@ -1,4 +1,4 @@
-(()=>{var i=(a,e)=>()=>(a&&(e=a(a=0)),e);var _=(a,e)=>()=>(e||a((e={exports:{}}).exports,e),e.exports);var d,b=i(()=>{d={id:"jobians.theme.amoled-black",name:"AMOLED Black (Editor Theme)",main:"dist/main.js",version:"1.0.0",readme:"README.md",icon:"icon.png",files:[],minVersionCode:292,price:0,license:"MIT",keywords:["AMOLED","OLED","Dark","Black","Theme"],changelogs:"CHANGELOGS.md",author:{name:"JOBIANSTECHIE",email:"jobianstechie@gmail.com",url:"https://jobians.top",github:"jobians"}}});var m,s=i(()=>{m=`/***
+(()=>{var i=(a,e)=>()=>(a&&(e=a(a=0)),e);var _=(a,e)=>()=>(e||a((e={exports:{}}).exports,e),e.exports);var d,b=i(()=>{d={id:"jobians.theme.amoled_black",name:"AMOLED Black (Editor Theme)",main:"dist/main.js",version:"1.0.0",readme:"README.md",icon:"icon.png",files:[],minVersionCode:292,price:0,license:"MIT",keywords:["AMOLED","OLED","Dark","Black","Theme"],changelogs:"CHANGELOGS.md",author:{name:"JOBIANSTECHIE",email:"jobianstechie@gmail.com",url:"https://jobians.top",github:"jobians"}}});var m,s=i(()=>{m=`/***
  * .ace-amoled-black
  */
 .ace-amoled-black {
