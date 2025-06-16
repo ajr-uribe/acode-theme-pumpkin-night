@@ -1,0 +1,20 @@
+{
+  "id": "jobians.theme.amoled-black",
+  "name": "AMOLED Black (Editor Theme)",
+  "main": "dist/main.js",
+  "version": "1.0.0",
+  "readme": "README.md",
+  "icon": "icon.png",
+  "files": [],
+  "minVersionCode": 292,
+  "price": 0,
+  "license": "MIT",
+  "keywords": ["AMOLED","OLED", "Dark", "Black", "Theme"],
+  "changelogs": "CHANGELOGS.md",
+  "author": {
+    "name": "JOBIANSTECHIE",
+    "email": "jobianstechie@gmail.com",
+    "url": "https://jobians.top",
+    "github": "jobians"
+  }
+}
