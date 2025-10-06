@@ -1,57 +1,58 @@
-# AMOLED Black Theme for Acode Editor
+# 🎃 Pumpkin Night Theme for Acode Editor
 
-![Theme Preview](https://i.ibb.co/YTjP0HQj/amoled-black-preview.jpg)
+![Theme Preview](TU_URL_AQUI)
 
-A pure black editor theme designed specifically for AMOLED screens. It reduces power consumption and provides a crisp, high-contrast coding environment.
+A dark, vibrant theme inspired by Halloween colors — deep blacks, glowing oranges, and subtle purple highlights. Perfect for night coding sessions with a warm yet powerful atmosphere.
 
 ---
 
-## 🔋 Features
+## 🧡 Features
 
-- **True Black Background** (`#000000`)  
-  Saves battery on OLED displays and looks sleek.
-- **Eye-Friendly Contrast**  
-  Carefully tuned for long coding sessions without strain.
-- **Vivid Syntax Highlighting**:
-  - **Keywords** — Pink (`#fe3a72`)
-  - **Strings** — Neon Green (`#21fd6b`)
-  - **Functions** — Yellow (`#fed604`)
-- **Refined UI Elements**:
-  - **Active Line** — Bright Cyan highlight
-  - **Cursor** — Gold for maximum visibility
-  - **Text Selection** — Subtle Indigo (`#333366`)
+-   **Rich Halloween Palette**  
+    Black base with orange and amber accents.
+-   **High Readability**  
+    Bright tokens on a dark, low-glare background.
+-   **Vivid Syntax Highlights**:
+    -   **Keywords** — Pumpkin Orange (`#ff8800`)
+    -   **Strings** — Soft Gold (`#ffd966`)
+    -   **Functions** — Warm Purple (`#b266ff`)
+-   **Polished Editor Details**:
+    -   **Active Line** — Amber glow
+    -   **Cursor** — Pale orange
+    -   **Selection** — Translucent orange haze
 
 ---
 
 ## 📦 Installation
 
-1. Install the theme via the **Acode app**.
-2. In Acode:
-   - Go to **Settings → Theme**
-   - Tap **Editor**
-   - Scroll down and select **AMOLED Black**
+1. Install the plugin through **Acode → Plugins → From URL**.
+2. Paste your repository link.
+3. After installation:
+    - Open **Settings → Theme → Editor**
+    - Choose **Pumpkin Night**
 
 ---
 
 ## ⚙️ Recommended Settings
 
-For a fully dark UI:
-- Go to **Settings → Theme → App**
-- Select the built-in **OLED** theme for menus and UI
+For a cohesive dark interface:
+
+-   Go to **Settings → Theme → App**
+-   Choose **OLED** or **Midnight** for menus and UI
 
 ---
 
 ## 🌐 Links
 
-- [GitHub Repository](https://github.com/jobians/acode-amoled-black-theme)
-- [Report an Issue](https://github.com/jobians/acode-amoled-black-theme/issues)
+-   [GitHub Repository](https://github.com/tuUsuario/acode-theme-pumpkin-night)
+-   [Report an Issue](https://github.com/tuUsuario/acode-theme-pumpkin-night/issues)
 
 ---
 
 ## 📜 License
 
-MIT License © 2025 [JOBIANSTECHIE](https://github.com/jobians)
+MIT License © 2025 [Anthony](https://github.com/tuUsuario)
 
 ---
 
-**Enjoy coding in the dark — with true black!** 🖤✨
+**Code in the dark, let the pumpkin glow.** 🎃🕯️

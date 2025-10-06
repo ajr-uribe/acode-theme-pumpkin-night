@@ -1,9 +1,11 @@
 {
   "name": "amoled-black-theme",
   "version": "1.0.0",
-  "description": "",
+  "description": "Acode theme for Halloween",
   "main": "src/main.js",
   "scripts": {
+    "sync": "rsync -rv ~/storage/shared/www/acode-theme/* ~/acode-theme/",
+    "sync-r": "rsync -rv --exclude node_modules ~/acode-theme/*  ~/storage/shared/www/acode-theme/",
     "dev": "node esbuild.config.mjs --serve",
     "build": "node esbuild.config.mjs"
   },

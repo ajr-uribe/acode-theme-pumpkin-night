@@ -4,7 +4,7 @@ import style from './style.scss';
 const settings = acode.require('settings');
 const { editor } = editorManager;
 
-const themeName = 'amoled-black';
+const themeName = 'halloween-pumpkin-night';
 
 ace.define(
   `ace/theme/${themeName}.css`,

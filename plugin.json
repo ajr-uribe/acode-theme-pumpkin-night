@@ -1,6 +1,6 @@
 {
-  "id": "jobians.theme.amoled_black",
-  "name": "AMOLED Black (Editor Theme)",
+  "id": "slabs.theme.halloween-pumpkin-night",
+  "name": "Halloween Pumpkin Night (Editor theme)",
   "main": "dist/main.js",
   "version": "1.0.0",
   "readme": "README.md",
@@ -12,9 +12,9 @@
   "keywords": ["AMOLED","OLED", "Dark", "Black", "Theme"],
   "changelogs": "CHANGELOGS.md",
   "author": {
-    "name": "JOBIANSTECHIE",
-    "email": "jobianstechie@gmail.com",
-    "url": "https://jobians.top",
-    "github": "jobians"
+    "name": "ScriptLabs",
+    "email": "scriptlabsmc@gmail.com",
+    "url": "https://scriptlabsmc.vercel.app",
+    "github": "ScriptLabsMC"
   }
 }

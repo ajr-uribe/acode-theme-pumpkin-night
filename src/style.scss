@@ -1,260 +1,365 @@
 /***
- * .ace-amoled-black
+ * .ace-halloween-pumpkin-night
+ * Tema Halloween completo para Acode (Pumpkin Night)
+ *
+ * Paleta: negro cálido, naranja calabaza, púrpura bruma, verde neón.
  */
 
-.ace-amoled-black {
-  color: #fff;
-  background: #000000;
-
-  .ace_gutter {
-    color: #464748;
-    background: #000000;
-  }
-
-  .ace_gutter-active-line {
-    color: #00ffd9;
-    text-shadow: 0 0 5px #00ffd9;
-    background: #111111;
-  }
-
-  .ace_print-margin {
-    width: 1px;
-    background: #333333;
-  }
-
-  .ace_cursor {
-    color: #fed604;
-  }
-
-  .ace_marker-layer .ace_selection {
-    background: #333366;
-    border-radius: 3px;
-    color: #fff;
-  }
-
-  .ace_multiselect .ace_selection.ace_start {
-    box-shadow: 0 0 3px #000;
-  }
-
-  .ace_marker-layer .ace_step {
-    background: #c6dbae;
-  }
-
-  .ace_marker-layer .ace_bracket {
-    margin: -1px 0 0 -1px;
-    border: 1px solid #00b2ff;
-    background: #000000;
-  }
-
-  .ace_marker-layer .ace_active-line {
-    background: #111111;
-    border: none;
-    box-sizing: border-box;
-  }
-
-  .ace_marker-layer .ace_selected-word {
-    background-color: rgba(85, 85, 255, 0.3);
-    color: #fff;
-    border-radius: 3px;
-  }
-
-  .ace_invisible {
-    color: #464748;
-  }
-
-  // Keywords
-  .ace_keyword {
-    color: #fe3a72;
-    background: #111111;
-    box-sizing: border-box;
-    border-radius: 5px;
-  }
-
-  .hljs-keyword {
-    color: #fe3a72;
-    background: #111111;
-    box-sizing: border-box;
-    border-radius: 5px;
-    font-weight: 500;
-  }
-
-  .ace_keyword.ace_operator {
-    color: #888;
-    background: none !important;
-    border: none !important;
-  }
-
-  // Constants
-  .ace_constant.ace_language {
-    color: #b267e6;
-  }
-
-  .ace_constant.ace_numeric {
-    color: #f39c12;
-  }
-
-  .ace_constant.ace_character {
-    color: #21fd6b;
-  }
-
-  .ace_constant.ace_character.ace_escape {
-    color: gold;
-  }
-
-  .ace_constant.ace_other {
-    color: #d263fd;
-  }
-
-  // Titles/Identifiers
-  .hljs-title {
-    color: #00ffd9;
-    background: none !important;
-    border: none !important;
-  }
-
-  .ace_identifier {
-    color: #00ffd9;
-  }
-
-  // Functions
-  .ace_support.ace_function {
-    color: #fed604;
-  }
-
-  .ace_support.ace_function.ace_dom {
-    color: #00b2ff;
-    background: #111111;
-    box-sizing: border-box;
-    border-radius: 5px;
-  }
-
-  .ace_support.ace_constant {
-    color: #f8d105;
-    background: #111111;
-    box-sizing: border-box;
-    border-radius: 5px;
-  }
-
-  // Classes
-  .ace_class {
-    color: #05d790;
-  }
-
-  // Variables
-  .ace_variable.ace_language {
-    color: #f39c12;
-  }
-
-  // Types
-  .ace_support.ace_type {
-    color: #85f6ab;
-    background: #111111;
-    border-radius: 3px;
-  }
-
-  // HTML Tags
-  .ace_meta.ace_tag {
-    color: #00b2ff;
-  }
-
-  // Storage
-  .ace_storage, 
-  .ace_storage.ace_type {
-    color: #b267e6;
-  }
-
-  // Invalid/Deprecated
-  .ace_invalid {
-    color: #e2e2e2;
-    background-color: #f859b1;
-  }
-
-  .ace_invalid.ace_deprecated {
-    color: #e2e2e2;
-    background-color: #b267e6;
-  }
-
-  // Strings
-  .ace_string {
-    color: #21fd6b;
-  }
-
-  // Comments
-  .ace_comment {
-    color: #6272A4;
-    background: #111111;
-    border-radius: 0px;
-  }
-
-  // Variables
-  .ace_variable {
-    color: #f9e08a;
-  }
-
-  .ace_constant {
-    color: #00b2ff;
-  }
-
-  // Parameters
-  .hljs-params,
-  .ace_variable.ace_parameter {
-    color: #00ffd9;
-    background: #111111;
-    box-sizing: border-box;
-    border-radius: 5px;
-  }
-
-  // HTML Attributes
-  .ace_entity.ace_other.ace_attribute-name {
-    color: #fed604;
-    background: #111111;
-    box-sizing: border-box;
-    border-radius: 5px;
-  }
-
-  // XML/HTML Punctuation
-  .ace_xml-pe.ace_xml,
-  .ace_punctuation.ace_tag {
-    color: #0587c4;
-  }
-
-  // HTML Tags
-  .ace_tag-name.ace_tag,
-  .ace_entity.ace_name.ace_tag {
-    color: #00b2ff;
-  }
-
-  // Parentheses
-  .ace_paren {
-    color: gold;
-  }
-
-  // Indent Guides
-  .ace_indent-guide {
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWPQ09NrYAgMjP4PAAtGAwchHMyAAAAAAElFTkSuQmCC) right repeat-y;
-    opacity: 0.3;
-  }
-
-  .ace_indent-guide-active {
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQIW2PQ1dX9zzBz5sz/ABCcBFFentLlAAAAAElFTkSuQmCC) right repeat-y;
-    opacity: 0.6;
-  }
-
-  // JavaScript Constants
-  .ace_support.ace_constant.ace_js {
-    color: #00b2ff !important;
-  }
-
-  // Functions
-  .ace_entity.ace_name.ace_function {
-    color: #fed604;
-    background: #111111;
-    box-sizing: border-box;
-    border-radius: 5px;
-  }
-
-  // CSS-in-JS
-  .ace_support.ace_constant.ace_css-in-js {
-    color: #00e8c6;
-  }
+.ace-halloween-pumpkin-night {
+  /* raíz */
+  color: #ffd8a8;              /* texto principal */
+  background-color: #0b0606;   /* fondo base */
+  background-image:
+    radial-gradient(circle at 20% 10%, rgba(149, 82, 255, 0.04), transparent 8%),
+    radial-gradient(circle at 80% 90%, rgba(255, 94, 0, 0.03), transparent 10%),
+    linear-gradient(180deg, rgba(58, 0, 90, 0.03), rgba(0, 0, 0, 0.06));
+  background-blend-mode: screen, screen, normal;
+  background-size: cover;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+/* editor internals */
+.ace-halloween-pumpkin-night .ace_scroller,
+.ace-halloween-pumpkin-night .ace_content,
+.ace-halloween-pumpkin-night .ace_layer {
+  background: transparent;
+}
+
+/* gutter */
+.ace-halloween-pumpkin-night .ace_gutter {
+  color: #6d4c41;
+  background: #0b0606;
+  border-right: 1px solid rgba(62, 39, 35, 0.25);
+}
+
+.ace-halloween-pumpkin-night .ace_gutter-cell {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.ace-halloween-pumpkin-night .ace_gutter-active-line {
+  color: #ff9100;
+  text-shadow: 0 0 6px #ff6f00;
+  background: #1a0d0d;
+}
+
+/* print margin */
+.ace-halloween-pumpkin-night .ace_print-margin {
+  width: 1px;
+  background: #2e1b1b;
+}
+
+/* cursor */
+.ace-halloween-pumpkin-night .ace_cursor {
+  color: #ffcc00;
+  width: 2px;
+  box-shadow: 0 0 6px rgba(255, 204, 0, 0.6);
+}
+
+/* selection and active line */
+.ace-halloween-pumpkin-night .ace_marker-layer .ace_selection {
+  background: rgba(255, 94, 0, 0.22);
+  border-radius: 4px;
+}
+
+.ace-halloween-pumpkin-night .ace_multiselect .ace_selection.ace_start {
+  box-shadow: 0 0 3px rgba(0,0,0,0.6);
+}
+
+.ace-halloween-pumpkin-night .ace_marker-layer .ace_active-line {
+  background: rgba(255, 102, 0, 0.06);
+  box-sizing: border-box;
+  border-left: 3px solid rgba(255,140,0,0.12);
+}
+
+/* selected word and search */
+.ace-halloween-pumpkin-night .ace_marker-layer .ace_selected-word {
+  background-color: rgba(255,128,0,0.2);
+  color: inherit;
+  border-radius: 3px;
+}
+
+.ace-halloween-pumpkin-night .ace_marker-layer .ace_search {
+  background: rgba(255,152,0,0.18);
+  border-bottom: 1px solid rgba(255,183,77,0.25);
+}
+
+/* occurrences / highlights */
+.ace-halloween-pumpkin-night .ace_marker-layer .ace_occurrence {
+  background: rgba(255,183,77,0.10);
+  border-radius: 3px;
+}
+
+/* brackets & matching */
+.ace-halloween-pumpkin-night .ace_marker-layer .ace_bracket {
+  margin: -1px 0 0 -1px;
+  border: 1px solid rgba(255,143,0,0.65);
+  background: rgba(11,6,6,0.45);
+  border-radius: 3px;
+}
+
+.ace-halloween-pumpkin-night .ace_paren {
+  color: gold;
+}
+
+/* invisible characters and wrap hint */
+.ace-halloween-pumpkin-night .ace_invisible {
+  color: rgba(85, 68, 68, 0.6);
+}
+
+.ace-halloween-pumpkin-night .ace_wrap-hint {
+  color: #b08968;
+  opacity: 0.9;
+}
+
+/* keywords / operators */
+.ace-halloween-pumpkin-night .ace_keyword {
+  color: #ff5722;
+  font-weight: 600;
+}
+
+.ace-halloween-pumpkin-night .ace_keyword.ace_operator {
+  color: #d1a18a;
+  background: none !important;
+}
+
+/* constants and numbers */
+.ace-halloween-pumpkin-night .ace_constant.ace_language,
+.ace-halloween-pumpkin-night .ace_constant.ace_numeric {
+  color: #ff7043;
+  font-weight: 600;
+}
+
+.ace-halloween-pumpkin-night .ace_constant.ace_character,
+.ace-halloween-pumpkin-night .ace_constant.ace_other {
+  color: #d263fd;
+}
+
+/* strings */
+.ace-halloween-pumpkin-night .ace_string {
+  color: #ffb74d;
+  text-shadow: 0 0 2px rgba(255,183,77,0.06);
+}
+
+/* comments */
+.ace-halloween-pumpkin-night .ace_comment {
+  color: #6d6875;
+  font-style: italic;
+  opacity: 0.95;
+}
+
+/* identifiers / titles */
+.ace-halloween-pumpkin-night .hljs-title,
+.ace-halloween-pumpkin-night .ace_identifier {
+  color: #fbc02d;
+  font-weight: 500;
+}
+
+/* functions & support */
+.ace-halloween-pumpkin-night .ace_support.ace_function,
+.ace-halloween-pumpkin-night .ace_entity.ace_name.ace_function {
+  color: #ffee58;
+  text-shadow: 0 0 4px rgba(255,111,0,0.22);
+}
+
+/* support DOM functions */
+.ace-halloween-pumpkin-night .ace_support.ace_function.ace_dom {
+  color: #00b2ff;
+  background: rgba(17, 17, 17, 0.35);
+  border-radius: 4px;
+  padding: 0 4px;
+}
+
+/* support constants and css-in-js */
+.ace-halloween-pumpkin-night .ace_support.ace_constant {
+  color: #f8d105;
+  background: rgba(17,17,17,0.35);
+  border-radius: 4px;
+  padding: 0 4px;
+}
+
+.ace-halloween-pumpkin-night .ace_support.ace_constant.ace_js {
+  color: #00b2ff !important;
+}
+
+.ace-halloween-pumpkin-night .ace_support.ace_constant.ace_css-in-js {
+  color: #00e8c6;
+}
+
+/* classes / types */
+.ace-halloween-pumpkin-night .ace_class {
+  color: #ba68c8;
+  font-weight: 600;
+}
+
+.ace-halloween-pumpkin-night .ace_support.ace_type {
+  color: #9575cd;
+  background: rgba(17,17,17,0.28);
+  border-radius: 3px;
+  padding: 0 4px;
+}
+
+/* storage / meta / tags */
+.ace-halloween-pumpkin-night .ace_storage,
+.ace-halloween-pumpkin-night .ace_storage.ace_type,
+.ace-halloween-pumpkin-night .ace_meta.ace_tag {
+  color: #b267e6;
+}
+
+.ace-halloween-pumpkin-night .ace_entity.ace_name.ace_tag,
+.ace-halloween-pumpkin-night .ace_tag-name.ace_tag {
+  color: #00b2ff;
+}
+
+.ace-halloween-pumpkin-night .ace_entity.ace_other.ace_attribute-name {
+  color: #ffcc80;
+  background: rgba(17,17,17,0.28);
+  border-radius: 4px;
+  padding: 0 4px;
+}
+
+.ace-halloween-pumpkin-night .ace_punctuation.ace_tag,
+.ace-halloween-pumpkin-night .ace_xml-pe.ace_xml {
+  color: #ff7043;
+}
+
+/* variables / parameters */
+.ace-halloween-pumpkin-night .ace_variable {
+  color: #f9e08a;
+}
+.ace-halloween-pumpkin-night .ace_variable.ace_language {
+  color: #aed581;
+}
+.ace-halloween-pumpkin-night .ace_variable.ace_parameter,
+.ace-halloween-pumpkin-night .hljs-params {
+  color: #00ffd9;
+  background: rgba(17,17,17,0.28);
+  border-radius: 4px;
+  padding: 0 4px;
+}
+
+/* invalid / deprecated */
+.ace-halloween-pumpkin-night .ace_invalid {
+  color: #ffffff;
+  background-color: #e53935;
+  border-radius: 3px;
+}
+.ace-halloween-pumpkin-night .ace_invalid.ace_deprecated {
+  color: #fff;
+  background-color: #b267e6;
+}
+
+/* selected/occurrence markers for debugging step */
+.ace-halloween-pumpkin-night .ace_marker-layer .ace_step {
+  background: rgba(198, 219, 174, 0.08);
+}
+
+/* fold widgets */
+.ace-halloween-pumpkin-night .ace_fold {
+  background: rgba(255,140,0,0.08);
+  border-radius: 2px;
+}
+.ace-halloween-pumpkin-night .ace_open-fold,
+.ace-halloween-pumpkin-night .ace_fold-widget {
+  color: #ffcc80;
+}
+
+/* indent guides */
+.ace-halloween-pumpkin-night .ace_indent-guide {
+  background: linear-gradient(90deg, rgba(255,87,34,0.14), rgba(0,0,0,0));
+  opacity: 0.35;
+  background-size: 1px 8px;
+}
+.ace-halloween-pumpkin-night .ace_indent-guide-active {
+  background: linear-gradient(90deg, rgba(255,152,0,0.28), rgba(0,0,0,0));
+  opacity: 0.75;
+  background-size: 1px 8px;
+}
+
+/* scrollbar (ace internal + webkit fallback) */
+.ace-halloween-pumpkin-night .ace_scrollbar {
+  background: rgba(0,0,0,0.18);
+  border-radius: 4px;
+}
+.ace-halloween-pumpkin-night .ace_scrollbar-inner {
+  background: rgba(255,140,0,0.12);
+}
+
+/* webkit scrollbar for container */
+.ace-halloween-pumpkin-night ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.ace-halloween-pumpkin-night ::-webkit-scrollbar-thumb {
+  background: rgba(255,140,0,0.16);
+  border-radius: 6px;
+}
+.ace-halloween-pumpkin-night ::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.12);
+}
+
+/* tooltip, completions, autocomplete popup */
+.ace-halloween-pumpkin-night .ace_tooltip,
+.ace-halloween-pumpkin-night .ace_autocomplete,
+.ace-halloween-pumpkin-night .ace_completion {
+  color: #ffd8a8;
+  background: linear-gradient(180deg, rgba(16,8,8,0.95), rgba(11,6,6,0.95));
+  border: 1px solid rgba(255,140,0,0.12);
+  box-shadow: 0 6px 24px rgba(11,6,6,0.7);
+  border-radius: 8px;
+  padding: 6px 8px;
+  font-size: 13px;
+}
+
+/* completion item selected */
+.ace-halloween-pumpkin-night .ace_completion .selected,
+.ace-halloween-pumpkin-night .ace_autocomplete .selected {
+  background: rgba(255,94,0,0.16);
+  color: #fff;
+}
+
+/* placeholder text */
+.ace-halloween-pumpkin-night .ace_placeholder {
+  color: #a48c80;
+  opacity: 0.9;
+}
+
+/* search input highlight line */
+.ace-halloween-pumpkin-night .ace_search-result {
+  background: rgba(255, 235, 59, 0.08);
+  border-radius: 3px;
+}
+
+/* diagnostics / lint underline (squiggly) */
+.ace-halloween-pumpkin-night .ace_diagnostic_error {
+  text-decoration: underline wavy #ff6f61;
+}
+.ace-halloween-pumpkin-night .ace_diagnostic_warning {
+  text-decoration: underline wavy #ffb74d;
+}
+
+/* minimal spinner / activity marker */
+.ace-halloween-pumpkin-night .ace_activity {
+  color: #ffcc00;
+  text-shadow: 0 0 8px rgba(255,204,0,0.2);
+}
+
+/* small helper: make sure selections inside widgets keep rounded corners */
+.ace-halloween-pumpkin-night .ace_marker-layer .ace_selection,
+.ace-halloween-pumpkin-night .ace_marker-layer .ace_selected-word {
+  border-radius: 4px;
+}
+
+/* final touch: subtle overlay vignette */
+.ace-halloween-pumpkin-night .ace_vignette::after {
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 40px 80px rgba(0,0,0,0.6), inset 0 -20px 60px rgba(0,0,0,0.55);
+  border-radius: 6px;
+  mix-blend-mode: multiply;
+}
+
+/* End of theme */
