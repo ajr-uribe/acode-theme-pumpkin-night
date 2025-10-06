@@ -44,7 +44,7 @@ For a cohesive dark interface:
 
 ## 🌐 Links
 
--   [GitHub Repository](https://github.com/tuUsuario/acode-theme-pumpkin-night)
+-   [GitHub Repository](https://github.com/ajr-uribe/acode-theme-pumpkin-night)
 -   [Report an Issue](https://github.com/tuUsuario/acode-theme-pumpkin-night/issues)
 
 ---
