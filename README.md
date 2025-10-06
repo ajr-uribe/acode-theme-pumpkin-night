@@ -51,7 +51,7 @@ For a cohesive dark interface:
 
 ## 📜 License
 
-MIT License © 2025 [Anthony](https://github.com/ajr-uribe
+MIT License © 2025 [Anthony](https://github.com/ajr-uribe)
 
 ---
 
