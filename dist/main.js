@@ -1,192 +1,371 @@
-(()=>{var i=(a,e)=>()=>(a&&(e=a(a=0)),e);var _=(a,e)=>()=>(e||a((e={exports:{}}).exports,e),e.exports);var d,b=i(()=>{d={id:"jobians.theme.amoled_black",name:"AMOLED Black (Editor Theme)",main:"dist/main.js",version:"1.0.0",readme:"README.md",icon:"icon.png",files:[],minVersionCode:292,price:0,license:"MIT",keywords:["AMOLED","OLED","Dark","Black","Theme"],changelogs:"CHANGELOGS.md",author:{name:"JOBIANSTECHIE",email:"jobianstechie@gmail.com",url:"https://jobians.top",github:"jobians"}}});var m,s=i(()=>{m=`/***
- * .ace-amoled-black
+(()=>{var p=(a,e)=>()=>(a&&(e=a(a=0)),e);var b=(a,e)=>()=>(e||a((e={exports:{}}).exports,e),e.exports);var t,g=p(()=>{t={id:"slabs.theme.halloween_pumpkin_night",name:"Halloween Pumpkin Night (Editor theme)",main:"dist/main.js",version:"1.0.0",readme:"README.md",icon:"icon.png",files:[],minVersionCode:292,price:0,license:"MIT",keywords:["AMOLED","OLED","Dark","Black","Theme","Halloween"],changelogs:"CHANGELOGS.md",author:{name:"ScriptLabs",email:"scriptlabsmc@gmail.com",url:"https://scriptlabsmc.vercel.app",github:"ScriptLabsMC"}}});var h,d=p(()=>{h=`@charset "UTF-8";
+/***
+ * .ace-halloween-pumpkin-night
+ * Tema Halloween completo para Acode (Pumpkin Night)
+ *
+ * Paleta: negro c\xE1lido, naranja calabaza, p\xFArpura bruma, verde ne\xF3n.
  */
-.ace-amoled-black {
-  color: #fff;
-  background: #000000;
+.ace-halloween-pumpkin-night {
+  /* ra\xEDz */
+  color: #ffd8a8; /* texto principal */
+  background-color: #0b0606; /* fondo base */
+  background-image: radial-gradient(circle at 20% 10%, rgba(149, 82, 255, 0.04), transparent 8%), radial-gradient(circle at 80% 90%, rgba(255, 94, 0, 0.03), transparent 10%), linear-gradient(180deg, rgba(58, 0, 90, 0.03), rgba(0, 0, 0, 0.06));
+  background-blend-mode: screen, screen, normal;
+  background-size: cover;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-.ace-amoled-black .ace_gutter {
-  color: #464748;
-  background: #000000;
+
+/* editor internals */
+.ace-halloween-pumpkin-night .ace_scroller,
+.ace-halloween-pumpkin-night .ace_content,
+.ace-halloween-pumpkin-night .ace_layer {
+  background: transparent;
 }
-.ace-amoled-black .ace_gutter-active-line {
-  color: #00ffd9;
-  text-shadow: 0 0 5px #00ffd9;
-  background: #111111;
+
+/* gutter */
+.ace-halloween-pumpkin-night .ace_gutter {
+  color: #6d4c41;
+  background: #0b0606;
+  border-right: 1px solid rgba(62, 39, 35, 0.25);
 }
-.ace-amoled-black .ace_print-margin {
+
+.ace-halloween-pumpkin-night .ace_gutter-cell {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.ace-halloween-pumpkin-night .ace_gutter-active-line {
+  color: #ff9100;
+  text-shadow: 0 0 6px #ff6f00;
+  background: #1a0d0d;
+}
+
+/* print margin */
+.ace-halloween-pumpkin-night .ace_print-margin {
   width: 1px;
-  background: #333333;
+  background: #2e1b1b;
 }
-.ace-amoled-black .ace_cursor {
-  color: #fed604;
+
+/* cursor */
+.ace-halloween-pumpkin-night .ace_cursor {
+  color: #ffcc00;
+  width: 2px;
+  box-shadow: 0 0 6px rgba(255, 204, 0, 0.6);
 }
-.ace-amoled-black .ace_marker-layer .ace_selection {
-  background: #333366;
+
+/* selection and active line */
+.ace-halloween-pumpkin-night .ace_marker-layer .ace_selection {
+  background: rgba(255, 94, 0, 0.22);
+  border-radius: 4px;
+}
+
+.ace-halloween-pumpkin-night .ace_multiselect .ace_selection.ace_start {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+}
+
+.ace-halloween-pumpkin-night .ace_marker-layer .ace_active-line {
+  background: rgba(255, 102, 0, 0.06);
+  box-sizing: border-box;
+  border-left: 3px solid rgba(255, 140, 0, 0.12);
+}
+
+/* selected word and search */
+.ace-halloween-pumpkin-night .ace_marker-layer .ace_selected-word {
+  background-color: rgba(255, 128, 0, 0.2);
+  color: inherit;
   border-radius: 3px;
-  color: #fff;
 }
-.ace-amoled-black .ace_multiselect .ace_selection.ace_start {
-  box-shadow: 0 0 3px #000;
+
+.ace-halloween-pumpkin-night .ace_marker-layer .ace_search {
+  background: rgba(255, 152, 0, 0.18);
+  border-bottom: 1px solid rgba(255, 183, 77, 0.25);
 }
-.ace-amoled-black .ace_marker-layer .ace_step {
-  background: #c6dbae;
+
+/* occurrences / highlights */
+.ace-halloween-pumpkin-night .ace_marker-layer .ace_occurrence {
+  background: rgba(255, 183, 77, 0.1);
+  border-radius: 3px;
 }
-.ace-amoled-black .ace_marker-layer .ace_bracket {
+
+/* brackets & matching */
+.ace-halloween-pumpkin-night .ace_marker-layer .ace_bracket {
   margin: -1px 0 0 -1px;
-  border: 1px solid #00b2ff;
-  background: #000000;
-}
-.ace-amoled-black .ace_marker-layer .ace_active-line {
-  background: #111111;
-  border: none;
-  box-sizing: border-box;
-}
-.ace-amoled-black .ace_marker-layer .ace_selected-word {
-  background-color: rgba(85, 85, 255, 0.3);
-  color: #fff;
+  border: 1px solid rgba(255, 143, 0, 0.65);
+  background: rgba(11, 6, 6, 0.45);
   border-radius: 3px;
 }
-.ace-amoled-black .ace_invisible {
-  color: #464748;
-}
-.ace-amoled-black .ace_keyword {
-  color: #fe3a72;
-  background: #111111;
-  box-sizing: border-box;
-  border-radius: 5px;
-}
-.ace-amoled-black .hljs-keyword {
-  color: #fe3a72;
-  background: #111111;
-  box-sizing: border-box;
-  border-radius: 5px;
-  font-weight: 500;
-}
-.ace-amoled-black .ace_keyword.ace_operator {
-  color: #888;
-  background: none !important;
-  border: none !important;
-}
-.ace-amoled-black .ace_constant.ace_language {
-  color: #b267e6;
-}
-.ace-amoled-black .ace_constant.ace_numeric {
-  color: #f39c12;
-}
-.ace-amoled-black .ace_constant.ace_character {
-  color: #21fd6b;
-}
-.ace-amoled-black .ace_constant.ace_character.ace_escape {
+
+.ace-halloween-pumpkin-night .ace_paren {
   color: gold;
 }
-.ace-amoled-black .ace_constant.ace_other {
+
+/* invisible characters and wrap hint */
+.ace-halloween-pumpkin-night .ace_invisible {
+  color: rgba(85, 68, 68, 0.6);
+}
+
+.ace-halloween-pumpkin-night .ace_wrap-hint {
+  color: #b08968;
+  opacity: 0.9;
+}
+
+/* keywords / operators */
+.ace-halloween-pumpkin-night .ace_keyword {
+  color: #ff5722;
+  font-weight: 600;
+}
+
+.ace-halloween-pumpkin-night .ace_keyword.ace_operator {
+  color: #d1a18a;
+  background: none !important;
+}
+
+/* constants and numbers */
+.ace-halloween-pumpkin-night .ace_constant.ace_language,
+.ace-halloween-pumpkin-night .ace_constant.ace_numeric {
+  color: #ff7043;
+  font-weight: 600;
+}
+
+.ace-halloween-pumpkin-night .ace_constant.ace_character,
+.ace-halloween-pumpkin-night .ace_constant.ace_other {
   color: #d263fd;
 }
-.ace-amoled-black .hljs-title {
-  color: #00ffd9;
-  background: none !important;
-  border: none !important;
+
+/* strings */
+.ace-halloween-pumpkin-night .ace_string {
+  color: #ffb74d;
+  text-shadow: 0 0 2px rgba(255, 183, 77, 0.06);
 }
-.ace-amoled-black .ace_identifier {
-  color: #00ffd9;
+
+/* comments */
+.ace-halloween-pumpkin-night .ace_comment {
+  color: #6d6875;
+  font-style: italic;
+  opacity: 0.95;
 }
-.ace-amoled-black .ace_support.ace_function {
-  color: #fed604;
+
+/* identifiers / titles */
+.ace-halloween-pumpkin-night .hljs-title,
+.ace-halloween-pumpkin-night .ace_identifier {
+  color: #fbc02d;
+  font-weight: 500;
 }
-.ace-amoled-black .ace_support.ace_function.ace_dom {
+
+/* functions & support */
+.ace-halloween-pumpkin-night .ace_support.ace_function,
+.ace-halloween-pumpkin-night .ace_entity.ace_name.ace_function {
+  color: #ffee58;
+  text-shadow: 0 0 4px rgba(255, 111, 0, 0.22);
+}
+
+/* support DOM functions */
+.ace-halloween-pumpkin-night .ace_support.ace_function.ace_dom {
   color: #00b2ff;
-  background: #111111;
-  box-sizing: border-box;
-  border-radius: 5px;
+  background: rgba(17, 17, 17, 0.35);
+  border-radius: 4px;
+  padding: 0 4px;
 }
-.ace-amoled-black .ace_support.ace_constant {
+
+/* support constants and css-in-js */
+.ace-halloween-pumpkin-night .ace_support.ace_constant {
   color: #f8d105;
-  background: #111111;
-  box-sizing: border-box;
-  border-radius: 5px;
+  background: rgba(17, 17, 17, 0.35);
+  border-radius: 4px;
+  padding: 0 4px;
 }
-.ace-amoled-black .ace_class {
-  color: #05d790;
-}
-.ace-amoled-black .ace_variable.ace_language {
-  color: #f39c12;
-}
-.ace-amoled-black .ace_support.ace_type {
-  color: #85f6ab;
-  background: #111111;
-  border-radius: 3px;
-}
-.ace-amoled-black .ace_meta.ace_tag {
-  color: #00b2ff;
-}
-.ace-amoled-black .ace_storage,
-.ace-amoled-black .ace_storage.ace_type {
-  color: #b267e6;
-}
-.ace-amoled-black .ace_invalid {
-  color: #e2e2e2;
-  background-color: #f859b1;
-}
-.ace-amoled-black .ace_invalid.ace_deprecated {
-  color: #e2e2e2;
-  background-color: #b267e6;
-}
-.ace-amoled-black .ace_string {
-  color: #21fd6b;
-}
-.ace-amoled-black .ace_comment {
-  color: #6272A4;
-  background: #111111;
-  border-radius: 0px;
-}
-.ace-amoled-black .ace_variable {
-  color: #f9e08a;
-}
-.ace-amoled-black .ace_constant {
-  color: #00b2ff;
-}
-.ace-amoled-black .hljs-params,
-.ace-amoled-black .ace_variable.ace_parameter {
-  color: #00ffd9;
-  background: #111111;
-  box-sizing: border-box;
-  border-radius: 5px;
-}
-.ace-amoled-black .ace_entity.ace_other.ace_attribute-name {
-  color: #fed604;
-  background: #111111;
-  box-sizing: border-box;
-  border-radius: 5px;
-}
-.ace-amoled-black .ace_xml-pe.ace_xml,
-.ace-amoled-black .ace_punctuation.ace_tag {
-  color: #0587c4;
-}
-.ace-amoled-black .ace_tag-name.ace_tag,
-.ace-amoled-black .ace_entity.ace_name.ace_tag {
-  color: #00b2ff;
-}
-.ace-amoled-black .ace_paren {
-  color: gold;
-}
-.ace-amoled-black .ace_indent-guide {
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWPQ09NrYAgMjP4PAAtGAwchHMyAAAAAAElFTkSuQmCC) right repeat-y;
-  opacity: 0.3;
-}
-.ace-amoled-black .ace_indent-guide-active {
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQIW2PQ1dX9zzBz5sz/ABCcBFFentLlAAAAAElFTkSuQmCC) right repeat-y;
-  opacity: 0.6;
-}
-.ace-amoled-black .ace_support.ace_constant.ace_js {
+
+.ace-halloween-pumpkin-night .ace_support.ace_constant.ace_js {
   color: #00b2ff !important;
 }
-.ace-amoled-black .ace_entity.ace_name.ace_function {
-  color: #fed604;
-  background: #111111;
-  box-sizing: border-box;
-  border-radius: 5px;
-}
-.ace-amoled-black .ace_support.ace_constant.ace_css-in-js {
+
+.ace-halloween-pumpkin-night .ace_support.ace_constant.ace_css-in-js {
   color: #00e8c6;
-}`});var f=_((u,t)=>{b();s();var l=acode.require("settings"),{editor:k}=editorManager,c="amoled-black";ace.define(`ace/theme/${c}.css`,["require","exports","module"],function(a,e,o){o.exports=m});ace.define(`ace/theme/${c}`,["require","exports","module",`ace/theme/${c}.css`,"ace/lib/dom"],function(a,e,o){e.isDark=!0,e.cssClass=`ace-${c}`,e.cssText=a(`./${c}.css`),a("ace/lib/dom").importCssString(e.cssText,e.cssClass,!1)});(function(){window.require([`ace/theme/${c}`],function(a){typeof t=="object"&&typeof u=="object"&&t&&(t.exports=a)})})();var n=class{constructor(){this.onThemeChange=this.onThemeChange.bind(this)}async init(){ace.require("ace/ext/themelist").themes.push({caption:c.split("-").map((o,r)=>r?o[0].toUpperCase()+o.slice(1):o.toUpperCase()).join(" "),theme:`ace/theme/${c}`,isDark:!0}),l.get("editorTheme")===c&&k.setTheme(`ace/theme/${c}`),l.on("update",this.onThemeChange)}async destroy(){l.off("update",this.onThemeChange)}onThemeChange(e){e===`ace/theme/${c}`&&(k.setTheme(`ace/theme/${c}`),l.update({editorTheme:c}))}};if(window.acode){let a=new n;acode.setPluginInit(d.id,(e,o,{cacheFileUrl:r,cacheFile:g})=>{e.endsWith("/")||(e+="/"),a.baseUrl=e,a.init(o,g,r)}),acode.setPluginUnmount(d.id,()=>{a.destroy()})}});f();})();
+}
+
+/* classes / types */
+.ace-halloween-pumpkin-night .ace_class {
+  color: #ba68c8;
+  font-weight: 600;
+}
+
+.ace-halloween-pumpkin-night .ace_support.ace_type {
+  color: #9575cd;
+  background: rgba(17, 17, 17, 0.28);
+  border-radius: 3px;
+  padding: 0 4px;
+}
+
+/* storage / meta / tags */
+.ace-halloween-pumpkin-night .ace_storage,
+.ace-halloween-pumpkin-night .ace_storage.ace_type,
+.ace-halloween-pumpkin-night .ace_meta.ace_tag {
+  color: #b267e6;
+}
+
+.ace-halloween-pumpkin-night .ace_entity.ace_name.ace_tag,
+.ace-halloween-pumpkin-night .ace_tag-name.ace_tag {
+  color: #00b2ff;
+}
+
+.ace-halloween-pumpkin-night .ace_entity.ace_other.ace_attribute-name {
+  color: #ffcc80;
+  background: rgba(17, 17, 17, 0.28);
+  border-radius: 4px;
+  padding: 0 4px;
+}
+
+.ace-halloween-pumpkin-night .ace_punctuation.ace_tag,
+.ace-halloween-pumpkin-night .ace_xml-pe.ace_xml {
+  color: #ff7043;
+}
+
+/* variables / parameters */
+.ace-halloween-pumpkin-night .ace_variable {
+  color: #f9e08a;
+}
+
+.ace-halloween-pumpkin-night .ace_variable.ace_language {
+  color: #aed581;
+}
+
+.ace-halloween-pumpkin-night .ace_variable.ace_parameter,
+.ace-halloween-pumpkin-night .hljs-params {
+  color: #00ffd9;
+  background: rgba(17, 17, 17, 0.28);
+  border-radius: 4px;
+  padding: 0 4px;
+}
+
+/* invalid / deprecated */
+.ace-halloween-pumpkin-night .ace_invalid {
+  color: #ffffff;
+  background-color: #e53935;
+  border-radius: 3px;
+}
+
+.ace-halloween-pumpkin-night .ace_invalid.ace_deprecated {
+  color: #fff;
+  background-color: #b267e6;
+}
+
+/* selected/occurrence markers for debugging step */
+.ace-halloween-pumpkin-night .ace_marker-layer .ace_step {
+  background: rgba(198, 219, 174, 0.08);
+}
+
+/* fold widgets */
+.ace-halloween-pumpkin-night .ace_fold {
+  background: rgba(255, 140, 0, 0.08);
+  border-radius: 2px;
+}
+
+.ace-halloween-pumpkin-night .ace_open-fold,
+.ace-halloween-pumpkin-night .ace_fold-widget {
+  color: #ffcc80;
+}
+
+/* indent guides */
+.ace-halloween-pumpkin-night .ace_indent-guide {
+  background: linear-gradient(90deg, rgba(255, 87, 34, 0.14), rgba(0, 0, 0, 0));
+  opacity: 0.35;
+  background-size: 1px 8px;
+}
+
+.ace-halloween-pumpkin-night .ace_indent-guide-active {
+  background: linear-gradient(90deg, rgba(255, 152, 0, 0.28), rgba(0, 0, 0, 0));
+  opacity: 0.75;
+  background-size: 1px 8px;
+}
+
+/* scrollbar (ace internal + webkit fallback) */
+.ace-halloween-pumpkin-night .ace_scrollbar {
+  background: rgba(0, 0, 0, 0.18);
+  border-radius: 4px;
+}
+
+.ace-halloween-pumpkin-night .ace_scrollbar-inner {
+  background: rgba(255, 140, 0, 0.12);
+}
+
+/* webkit scrollbar for container */
+.ace-halloween-pumpkin-night ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.ace-halloween-pumpkin-night ::-webkit-scrollbar-thumb {
+  background: rgba(255, 140, 0, 0.16);
+  border-radius: 6px;
+}
+
+.ace-halloween-pumpkin-night ::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.12);
+}
+
+/* tooltip, completions, autocomplete popup */
+.ace-halloween-pumpkin-night .ace_tooltip,
+.ace-halloween-pumpkin-night .ace_autocomplete,
+.ace-halloween-pumpkin-night .ace_completion {
+  color: #ffd8a8;
+  background: linear-gradient(180deg, rgba(16, 8, 8, 0.95), rgba(11, 6, 6, 0.95));
+  border: 1px solid rgba(255, 140, 0, 0.12);
+  box-shadow: 0 6px 24px rgba(11, 6, 6, 0.7);
+  border-radius: 8px;
+  padding: 6px 8px;
+  font-size: 13px;
+}
+
+/* completion item selected */
+.ace-halloween-pumpkin-night .ace_completion .selected,
+.ace-halloween-pumpkin-night .ace_autocomplete .selected {
+  background: rgba(255, 94, 0, 0.16);
+  color: #fff;
+}
+
+/* placeholder text */
+.ace-halloween-pumpkin-night .ace_placeholder {
+  color: #a48c80;
+  opacity: 0.9;
+}
+
+/* search input highlight line */
+.ace-halloween-pumpkin-night .ace_search-result {
+  background: rgba(255, 235, 59, 0.08);
+  border-radius: 3px;
+}
+
+/* diagnostics / lint underline (squiggly) */
+.ace-halloween-pumpkin-night .ace_diagnostic_error {
+  text-decoration: underline wavy #ff6f61;
+}
+
+.ace-halloween-pumpkin-night .ace_diagnostic_warning {
+  text-decoration: underline wavy #ffb74d;
+}
+
+/* minimal spinner / activity marker */
+.ace-halloween-pumpkin-night .ace_activity {
+  color: #ffcc00;
+  text-shadow: 0 0 8px rgba(255, 204, 0, 0.2);
+}
+
+/* small helper: make sure selections inside widgets keep rounded corners */
+.ace-halloween-pumpkin-night .ace_marker-layer .ace_selection,
+.ace-halloween-pumpkin-night .ace_marker-layer .ace_selected-word {
+  border-radius: 4px;
+}
+
+/* final touch: subtle overlay vignette */
+.ace-halloween-pumpkin-night .ace_vignette::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 40px 80px rgba(0, 0, 0, 0.6), inset 0 -20px 60px rgba(0, 0, 0, 0.55);
+  border-radius: 6px;
+  mix-blend-mode: multiply;
+}
+
+/* End of theme */`});var w=b((u,r)=>{g();d();var i=acode.require("settings"),{editor:s}=editorManager,n="halloween-pumpkin-night";ace.define(`ace/theme/${n}.css`,["require","exports","module"],function(a,e,c){c.exports=h});ace.define(`ace/theme/${n}`,["require","exports","module",`ace/theme/${n}.css`,"ace/lib/dom"],function(a,e,c){e.isDark=!0,e.cssClass=`ace-${n}`,e.cssText=a(`./${n}.css`),a("ace/lib/dom").importCssString(e.cssText,e.cssClass,!1)});(function(){window.require([`ace/theme/${n}`],function(a){typeof r=="object"&&typeof u=="object"&&r&&(r.exports=a)})})();var l=class{constructor(){this.onThemeChange=this.onThemeChange.bind(this)}async init(){ace.require("ace/ext/themelist").themes.push({caption:n.split("-").map((c,o)=>o?c[0].toUpperCase()+c.slice(1):c.toUpperCase()).join(" "),theme:`ace/theme/${n}`,isDark:!0}),i.get("editorTheme")===n&&s.setTheme(`ace/theme/${n}`),i.on("update",this.onThemeChange)}async destroy(){i.off("update",this.onThemeChange)}onThemeChange(e){e===`ace/theme/${n}`&&(s.setTheme(`ace/theme/${n}`),i.update({editorTheme:n}))}};if(window.acode){let a=new l;acode.setPluginInit(t.id,(e,c,{cacheFileUrl:o,cacheFile:m})=>{e.endsWith("/")||(e+="/"),a.baseUrl=e,a.init(c,m,o)}),acode.setPluginUnmount(t.id,()=>{a.destroy()})}});w();})();

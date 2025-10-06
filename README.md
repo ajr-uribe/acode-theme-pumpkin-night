@@ -45,13 +45,13 @@ For a cohesive dark interface:
 ## 🌐 Links
 
 -   [GitHub Repository](https://github.com/ajr-uribe/acode-theme-pumpkin-night)
--   [Report an Issue](https://github.com/tuUsuario/acode-theme-pumpkin-night/issues)
+-   [Report an Issue](https://github.com/ajr-uribe/acode-theme-pumpkin-night/issues)
 
 ---
 
 ## 📜 License
 
-MIT License © 2025 [Anthony](https://github.com/tuUsuario)
+MIT License © 2025 [Anthony](https://github.com/ajr-uribe
 
 ---
 

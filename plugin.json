@@ -1,5 +1,5 @@
 {
-  "id": "slabs.theme.halloween-pumpkin-night",
+  "id": "slabs.theme.halloween_pumpkin_night",
   "name": "Halloween Pumpkin Night (Editor theme)",
   "main": "dist/main.js",
   "version": "1.0.0",
@@ -9,7 +9,7 @@
   "minVersionCode": 292,
   "price": 0,
   "license": "MIT",
-  "keywords": ["AMOLED","OLED", "Dark", "Black", "Theme"],
+  "keywords": ["AMOLED","OLED", "Dark", "Black", "Theme", "Halloween"],
   "changelogs": "CHANGELOGS.md",
   "author": {
     "name": "ScriptLabs",

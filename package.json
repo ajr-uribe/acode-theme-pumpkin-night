@@ -1,11 +1,11 @@
 {
-  "name": "amoled-black-theme",
+  "name": "halloween-pumpkin-night",
   "version": "1.0.0",
   "description": "Acode theme for Halloween",
   "main": "src/main.js",
   "scripts": {
-    "sync": "rsync -rv ~/storage/shared/www/acode-theme/* ~/acode-theme/",
-    "sync-r": "rsync -rv --exclude node_modules ~/acode-theme/*  ~/storage/shared/www/acode-theme/",
+    "sync": "rm -rf ~/acode-theme/* && rsync -rv --delete --exclude node_modules ~/storage/shared/www/acode-theme/* ~/acode-theme/ && cd ~/acode-theme && npm i && npm run build && npm run sync-r",
+    "sync-r": "rsync -rv --delete --exclude node_modules ~/acode-theme/*  ~/storage/shared/www/acode-theme/",
     "dev": "node esbuild.config.mjs --serve",
     "build": "node esbuild.config.mjs"
   },
