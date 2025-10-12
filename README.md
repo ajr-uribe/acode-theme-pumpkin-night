@@ -1,10 +1,10 @@
 # 🎃 Pumpkin Night Theme for Acode Editor
 
-![Theme Preview](https://raw.githubusercontent.com/ajr-uribe/acode-theme-pumpkin-night/refs/heads/main/preview.jpg)
-
 A dark, vibrant theme inspired by Halloween colors — deep blacks, glowing oranges, and subtle purple highlights. Perfect for night coding sessions with a warm yet powerful atmosphere.
 
 ---
+
+![Preview](https://raw.githubusercontent.com/ajr-uribe/acode-theme-pumpkin-night/refs/heads/main/preview.jpg)
 
 ## 🧡 Features
 
@@ -56,3 +56,5 @@ MIT License © 2025 [Anthony](https://github.com/ajr-uribe)
 ---
 
 **Code in the dark, let the pumpkin glow.** 🎃🕯️
+
+## Theme based on Amoled Black Theme by Jobians
