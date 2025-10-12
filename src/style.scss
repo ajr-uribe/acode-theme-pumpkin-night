@@ -1,218 +1,263 @@
-/***
- * .ace-halloween-pumpkin-night (Fixed Cursor Offset)
- * Tema Halloween optimizado para Acode / Ace Editor
- * Paleta: negro cálido, naranja calabaza, púrpura bruma, verde neón.
+/***  
+ * .ace-halloween-pumpkin-night  
+ * Edición Halloween: tonos morado eléctrico y naranja brillante  
  */
 
 .ace-halloween-pumpkin-night {
-	color: #ffd8a8;
-	background-color: #0b0606;
-	background-image: radial-gradient(
-			circle at 20% 10%,
-			rgba(149, 82, 255, 0.04),
-			transparent 8%
-		),
-		radial-gradient(
-			circle at 80% 90%,
-			rgba(255, 94, 0, 0.03),
-			transparent 10%
-		),
-		linear-gradient(180deg, rgba(58, 0, 90, 0.03), rgba(0, 0, 0, 0.06));
-	background-blend-mode: screen, screen, normal;
-	background-size: cover;
-	font-family: "Fira Code", "JetBrains Mono", monospace;
-	font-size: 13.5px;
-	line-height: 1.45;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
+	color: #fff;
+	background: #000000;
 
-/* Layers transparentes */
-.ace-halloween-pumpkin-night .ace_scroller,
-.ace-halloween-pumpkin-night .ace_content,
-.ace-halloween-pumpkin-night .ace_layer {
-	background: transparent;
-}
+	.ace_gutter {
+		color: #ff7a18;
+		background: #000000;
+	}
 
-/* Gutter */
-.ace-halloween-pumpkin-night .ace_gutter {
-	color: #6d4c41;
-	background: #0b0606;
-	border-right: 1px solid rgba(62, 39, 35, 0.25);
-}
+	.ace_gutter-active-line {
+		color: #b84cff;
+		text-shadow: 0 0 6px #b84cff;
+		background: #1a001f;
+	}
 
-.ace-halloween-pumpkin-night .ace_gutter-cell {
-	padding: 0 8px;
-}
+	.ace_print-margin {
+		width: 1px;
+		background: #3a1a00;
+	}
 
-.ace-halloween-pumpkin-night .ace_gutter-active-line {
-	color: #ff9100;
-	text-shadow: 0 0 6px #ff6f00;
-	background: #1a0d0d;
-}
+	.ace_cursor {
+		color: #ff7a18;
+	}
 
-/* Margen de impresión */
-.ace-halloween-pumpkin-night .ace_print-margin {
-	width: 1px;
-	background: #2e1b1b;
-}
+	.ace_marker-layer .ace_selection {
+		background: #2a0047;
+		border-radius: 3px;
+		color: #fff;
+	}
 
-/* Cursor */
-.ace-halloween-pumpkin-night .ace_cursor {
-	color: #ffcc00;
-	background-color: transparent;
-	width: 2px;
-	/* Quitamos box-shadow por offset */
-	box-shadow: none !important;
-	transform: translateX(0);
-	position: absolute;
-}
+	.ace_multiselect .ace_selection.ace_start {
+		box-shadow: 0 0 3px #000;
+	}
 
-/* Línea activa */
-.ace-halloween-pumpkin-night .ace_marker-layer .ace_active-line {
-	background: rgba(255, 102, 0, 0.06);
-}
+	.ace_marker-layer .ace_step {
+		background: #ffb84c;
+	}
 
-.ace-halloween-pumpkin-night .ace_active-line-marker {
-	border-left: 3px solid rgba(255, 140, 0, 0.2);
-	margin-left: -1px;
-}
+	.ace_marker-layer .ace_bracket {
+		margin: -1px 0 0 -1px;
+		border: 1px solid #b84cff;
+		background: #000000;
+	}
 
-/* Selección */
-.ace-halloween-pumpkin-night .ace_marker-layer .ace_selection {
-	background: rgba(255, 94, 0, 0.22);
-	border-radius: 2px;
-}
+	.ace_marker-layer .ace_active-line {
+		background: #1a001f;
+		border: none;
+		box-sizing: border-box;
+	}
 
-/* Palabras seleccionadas */
-.ace-halloween-pumpkin-night .ace_marker-layer .ace_selected-word {
-	background-color: rgba(255, 128, 0, 0.2);
-	border-radius: 2px;
-}
+	.ace_marker-layer .ace_selected-word {
+		background-color: rgba(184, 76, 255, 0.3);
+		color: #fff;
+		border-radius: 3px;
+	}
 
-/* Coincidencias */
-.ace-halloween-pumpkin-night .ace_marker-layer .ace_occurrence {
-	background: rgba(255, 183, 77, 0.1);
-	border-radius: 2px;
-}
+	.ace_invisible {
+		color: #5c5c5c;
+	}
 
-/* Paréntesis / llaves */
-.ace-halloween-pumpkin-night .ace_marker-layer .ace_bracket {
-	border: 1px solid rgba(255, 143, 0, 0.65);
-	background: rgba(11, 6, 6, 0.45);
-	border-radius: 3px;
-	margin: 0;
-}
+	// Keywords
+	.ace_keyword {
+		color: #ff7a18;
+		background: #1a001f;
+		box-sizing: border-box;
+		border-radius: 5px;
+	}
 
-/* Invisibles */
-.ace-halloween-pumpkin-night .ace_invisible {
-	color: rgba(85, 68, 68, 0.5);
-}
+	.hljs-keyword {
+		color: #ff7a18;
+		background: #1a001f;
+		box-sizing: border-box;
+		border-radius: 5px;
+		font-weight: 500;
+	}
 
-/* Palabras clave */
-.ace-halloween-pumpkin-night .ace_keyword {
-	color: #ff5722;
-	font-weight: 600;
-}
+	.ace_keyword.ace_operator {
+		color: #b84cff;
+		background: none !important;
+		border: none !important;
+	}
 
-.ace-halloween-pumpkin-night .ace_keyword.ace_operator {
-	color: #d1a18a;
-}
+	// Constants
+	.ace_constant.ace_language {
+		color: #b84cff;
+	}
 
-/* Constantes y números */
-.ace-halloween-pumpkin-night .ace_constant.ace_language,
-.ace-halloween-pumpkin-night .ace_constant.ace_numeric {
-	color: #ff7043;
-	font-weight: 600;
-}
+	.ace_constant.ace_numeric {
+		color: #ffb84c;
+	}
 
-/* Strings */
-.ace-halloween-pumpkin-night .ace_string {
-	color: #ffb74d;
-	text-shadow: none;
-}
+	.ace_constant.ace_character {
+		color: #ff7a18;
+	}
 
-/* Comentarios */
-.ace-halloween-pumpkin-night .ace_comment {
-	color: #6d6875;
-	font-style: italic;
-}
+	.ace_constant.ace_character.ace_escape {
+		color: #ffd580;
+	}
 
-/* Funciones */
-.ace-halloween-pumpkin-night .ace_support.ace_function,
-.ace-halloween-pumpkin-night .ace_entity.ace_name.ace_function {
-	color: #ffee58;
-}
+	.ace_constant.ace_other {
+		color: #b84cff;
+	}
 
-/* Variables */
-.ace-halloween-pumpkin-night .ace_variable {
-	color: #f9e08a;
-}
-.ace-halloween-pumpkin-night .ace_variable.ace_language {
-	color: #aed581;
-}
-.ace-halloween-pumpkin-night .ace_variable.ace_parameter {
-	color: #00ffd9;
-}
+	// Titles/Identifiers
+	.hljs-title {
+		color: #ffb84c;
+		background: none !important;
+		border: none !important;
+	}
 
-/* Clases y tipos */
-.ace-halloween-pumpkin-night .ace_class {
-	color: #ba68c8;
-	font-weight: 600;
-}
+	.ace_identifier {
+		color: #ffb84c;
+	}
 
-/* Tags y atributos */
-.ace-halloween-pumpkin-night .ace_entity.ace_name.ace_tag {
-	color: #00b2ff;
-}
-.ace-halloween-pumpkin-night .ace_entity.ace_other.ace_attribute-name {
-	color: #ffcc80;
-}
+	// Functions
+	.ace_support.ace_function {
+		color: #ff7a18;
+	}
 
-/* Indent guides */
-.ace-halloween-pumpkin-night .ace_indent-guide {
-	background: linear-gradient(90deg, rgba(255, 87, 34, 0.14), transparent);
-}
-.ace-halloween-pumpkin-night .ace_indent-guide-active {
-	background: linear-gradient(90deg, rgba(255, 152, 0, 0.28), transparent);
-}
+	.ace_support.ace_function.ace_dom {
+		color: #b84cff;
+		background: #1a001f;
+		box-sizing: border-box;
+		border-radius: 5px;
+	}
 
-/* Scrollbar */
-.ace-halloween-pumpkin-night ::-webkit-scrollbar {
-	width: 10px;
-}
-.ace-halloween-pumpkin-night ::-webkit-scrollbar-thumb {
-	background: rgba(255, 140, 0, 0.16);
-	border-radius: 6px;
-}
+	.ace_support.ace_constant {
+		color: #ffb84c;
+		background: #1a001f;
+		box-sizing: border-box;
+		border-radius: 5px;
+	}
 
-/* Tooltip / Autocomplete */
-.ace-halloween-pumpkin-night .ace_tooltip,
-.ace-halloween-pumpkin-night .ace_autocomplete {
-	color: #ffd8a8;
-	background: rgba(11, 6, 6, 0.95);
-	border: 1px solid rgba(255, 140, 0, 0.12);
-	border-radius: 6px;
-	box-shadow: 0 6px 24px rgba(11, 6, 6, 0.7);
-}
+	// Classes
+	.ace_class {
+		color: #ff7a18;
+	}
 
-/* Placeholder */
-.ace-halloween-pumpkin-night .ace_placeholder {
-	color: #a48c80;
-	opacity: 0.9;
-}
+	// Variables
+	.ace_variable.ace_language {
+		color: #ffb84c;
+	}
 
-/* Sin offset por font */
-.ace-halloween-pumpkin-night .ace_line {
-	display: flex;
-	align-items: baseline;
-	height: 1.45em;
-	position: relative;
-}
+	// Types
+	.ace_support.ace_type {
+		color: #ff7a18;
+		background: #1a001f;
+		border-radius: 3px;
+	}
 
-/* Corrección de transform visual */
-.ace-halloween-pumpkin-night .ace_cursor-layer {
-	transform: none !important;
-}
+	// HTML Tags
+	.ace_meta.ace_tag {
+		color: #b84cff;
+	}
 
-/* Fin del tema */
+	// Storage
+	.ace_storage,
+	.ace_storage.ace_type {
+		color: #b84cff;
+	}
+
+	// Invalid/Deprecated
+	.ace_invalid {
+		color: #ffffff;
+		background-color: #ff007f;
+	}
+
+	.ace_invalid.ace_deprecated {
+		color: #e2e2e2;
+		background-color: #b84cff;
+	}
+
+	// Strings
+	.ace_string {
+		color: #ffb84c;
+	}
+
+	// Comments
+	.ace_comment {
+		color: #845f99;
+		background: #1a001f;
+		border-radius: 0px;
+	}
+
+	// Variables
+	.ace_variable {
+		color: #ffb84c;
+	}
+
+	.ace_constant {
+		color: #b84cff;
+	}
+
+	// Parameters
+	.hljs-params,
+	.ace_variable.ace_parameter {
+		color: #ff7a18;
+		background: #1a001f;
+		box-sizing: border-box;
+		border-radius: 5px;
+	}
+
+	// HTML Attributes
+	.ace_entity.ace_other.ace_attribute-name {
+		color: #ffb84c;
+		background: #1a001f;
+		box-sizing: border-box;
+		border-radius: 5px;
+	}
+
+	// XML/HTML Punctuation
+	.ace_xml-pe.ace_xml,
+	.ace_punctuation.ace_tag {
+		color: #b84cff;
+	}
+
+	// HTML Tags
+	.ace_tag-name.ace_tag,
+	.ace_entity.ace_name.ace_tag {
+		color: #b84cff;
+	}
+
+	// Parentheses
+	.ace_paren {
+		color: #ffb84c;
+	}
+
+	// Indent Guides
+	.ace_indent-guide {
+		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWPQ09NrYAgMjP4PAAtGAwchHMyAAAAAAElFTkSuQmCC)
+			right repeat-y;
+		opacity: 0.3;
+	}
+
+	.ace_indent-guide-active {
+		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQIW2PQ1dX9zzBz5sz/ABCcBFFentLlAAAAAElFTkSuQmCC)
+			right repeat-y;
+		opacity: 0.6;
+	}
+
+	// JavaScript Constants
+	.ace_support.ace_constant.ace_js {
+		color: #b84cff !important;
+	}
+
+	// Functions
+	.ace_entity.ace_name.ace_function {
+		color: #ff7a18;
+		background: #1a001f;
+		box-sizing: border-box;
+		border-radius: 5px;
+	}
+
+	// CSS-in-JS
+	.ace_support.ace_constant.ace_css-in-js {
+		color: #b84cff;
+	}
+}
